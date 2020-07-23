@@ -111,9 +111,10 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 500px;
+    left: 400px;
     box-shadow: 0px 0px 10px grey;
     background-color: #dddddd;
+    padding: 0;
 }
 
 nav#menu li {
