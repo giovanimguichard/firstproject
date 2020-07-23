@@ -8,23 +8,18 @@
     <script>
         var quebrou = false;
 
-        function acendeLampada() {
-            if (quebrou == false) {
+        const acendeLampada = () => {
+            if (quebrou == false)
                 document.getElementById("luz").src = "_imagens/lampada-acesa.jpg";
-
-            }
         }
 
-        function apagaLampada() {
-            if (quebrou == false) {
-
+        const apagaLampada = () => {
+            if (quebrou == false)
                 document.getElementById("luz").src = "_imagens/lampada-apagada.jpg";
-            }
         }
 
-        function lampadaQuebrada() {
+        const lampadaQuebrada = () => {
             if (quebrou == false) {
-
                 document.getElementById("luz").src = "_imagens/lampada-quebrada.jpg";
                 quebrou = true;
             }
