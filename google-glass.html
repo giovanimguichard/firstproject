@@ -8,8 +8,13 @@
     <link href="_css/estilo.css" rel="stylesheet">
     <style>
         body {
+            display: flex;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 10pt;
+            flex-flow: column wrap;
+            flex: 1 1 auto;
+            justify-content: center;
+            flex-basis: auto;
         }
         
         p {
@@ -26,6 +31,7 @@
         }
         
         article h2 {
+            display: block;
             font-size: 13pt;
             color: #888888;
             margin: 0;
@@ -36,12 +42,18 @@
             margin-bottom: 800px;
         }
         
-        img {}
-        
         img.img-dir {
-            display: block;
+            display: flex;
+            flex-flow: wrap;
+            flex: auto;
             float: right;
             margin-left: 5px;
+        }
+        
+        img {
+            display: flex;
+            flex-basis: auto;
+            flex: 2 2 auto;
         }
     </style>
 </head>
