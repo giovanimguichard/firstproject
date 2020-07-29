@@ -6,12 +6,7 @@ window.addEventListener('load', () => {
     const hideAll = () =>
         janelas.forEach((janela) => janela.classList.remove('show'))
     const showById = (id) => {
-        let element
-        if (id.startsWith('#')) {
-            element = document.querySelector(id)
-        } else {
-            element = document.getElementById(id)
-        }
+        const element = id.startsWith('#') ? document.querySelector(id) : document.getElementById(id)
         if (element) {
             element.classList.add('show')
         }
