@@ -5,7 +5,7 @@ function mudaFoto(foto) {
 window.addEventListener('load', () => {
     const hideAll = () =>
         janelas.forEach((janela) => janela.classList.remove('show'))
-    const showById = (id) => document.getElementById(id).classList.add('show')
+    const showById = (id) => document.querySelector(id).classList.add('show')
     const onClick = (ev) => {
         ev.preventDefault()
         hideAll()
